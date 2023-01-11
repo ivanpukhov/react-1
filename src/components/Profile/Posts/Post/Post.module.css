@@ -1,0 +1,7 @@
+.post__item {
+    opacity: 0.8;
+    border-bottom: 1px solid rgb(208, 203, 203);
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+}
