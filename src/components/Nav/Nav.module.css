@@ -21,4 +21,12 @@
     align-items: center;
     cursor: pointer;
     background-color: rgba(46, 46, 46, 0.209);
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.nav ul a.active{
+    color: #ff9797;
 }

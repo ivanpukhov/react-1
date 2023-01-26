@@ -1,0 +1,45 @@
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile__back {
+    width: 100%;
+}
+
+.profile__back img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.profile__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #d000ff 33%, #0D61BC 66%, #0011f9);
+}
+
+.profile__img img {
+    width: 95%;
+    border-radius: 50%;
+}
+
+.profile__left {
+    width: 100%;
+    max-width: 40%;
+}
+
+.profile__name {
+    font-size: 24px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #c86edc 33%, #0D61BC 66%, #4281de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    margin: 20px;
+}

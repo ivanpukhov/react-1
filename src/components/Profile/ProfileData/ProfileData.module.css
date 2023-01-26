@@ -1,6 +1,5 @@
-.post {
+.info {
     width: 100%;
-    max-width: 48%;
     border: 1px solid rgba(148, 143, 143, 0.209);
     padding: 20px;
     border-radius: 5px;
@@ -8,16 +7,18 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-height: 330px;
-    overflow: scroll;
+    height: fit-content;
 }
 
-.post__title {
-    font-size: 24px;
+.info__item {
+    gap: 5px;
+    display: flex;
 }
 
-.post__item {
-    opacity: 0.8;
-    border-bottom: 1px solid rgb(208, 203, 203);
-    padding-bottom: 13px;
+.info__item_before {
+    font-weight: bold;
+}
+
+.info__item_after {
+    font-weight: lighter;
 }

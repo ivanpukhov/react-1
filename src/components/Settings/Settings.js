@@ -1,10 +1,9 @@
-import s from './Dialogs.module.css'
-const Dialogs = () => {
+import s from './Settings.module.css'
+const Settings = () => {
 	return (
 		<div className="dialogs">
-			Dialogss
   		</div>
 	)
 }
 
-export default Dialogs
+export default Settings

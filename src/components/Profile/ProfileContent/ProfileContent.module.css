@@ -21,3 +21,15 @@
     border-bottom: 1px solid rgb(208, 203, 203);
     padding-bottom: 13px;
 }
+
+.profile__left {
+    width: 100%;
+    max-width: 48%;
+}
+
+.profile__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}

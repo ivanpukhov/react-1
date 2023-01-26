@@ -1,21 +1,34 @@
 import s from './Dialogs.module.css'
-import {NavLink} from "react-router-dom";
+import Message from "./MessagesItem/MessagesItem";
+import Dialog from "./DialogsItem/DialogsItem";
 
 const Dialogs = () => {
+    let dialogsData = [
+        {id: 1, name: 'Ivan'},
+        {id: 2, name: 'Baha'},
+        {id: 3, name: 'Kirill'},
+        {id: 4, name: 'Nikita'},
+        {id: 5, name: 'Andrey '},
+    ]
+
+    let dialogsElements = dialogsData.map(dialog => <Dialog name={dialog.name} id={dialog.id}/>)
+
+
+    let messages = [
+        {id: 1, message: 'Hi'},
+        {id: 2, message: 'Hello'},
+        {id: 3, message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, autem'},
+        {id: 4, message: 'Еще одно сообщение'},
+    ]
+    let messagedElements = messages.map(message => <Message message={message.message}/>)
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs__item}>
-                <NavLink to="/dialogs/2"><div className={s.dialog}>Baha</div></NavLink>
-                <NavLink to="/dialogs/3"><div className={s.dialog}>Kirill</div></NavLink>
-                <NavLink to="/dialogs/4"><div className={s.dialog}>Nikita</div></NavLink>
-                <NavLink to="/dialogs/5"><div className={s.dialog}>Andrey</div></NavLink>
+                {dialogsElements}
             </div>
             <div className={s.messages}>
-                <div className={s.message}>Hi</div>
-                <div className={s.message_from}>Hello</div>
-                <div className={s.message}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, autem, distinctio dolores eveniet illo ipsam iure iusto magni natus neque nesciunt nobis odit officia optio quae sed, ullam voluptatem. Doloribus dolorum illo ipsa officiis perferendis porro quidem sint, tempora!</div>
-                <div className={s.message_from}>Whats Up!</div>
-                <div className={s.message}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, esse!</div>
+                {messagedElements}
             </div>
         </div>
     )

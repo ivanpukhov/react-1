@@ -1,10 +1,10 @@
-import s from './Dialogs.module.css'
-const Dialogs = () => {
+import s from './News.module.css'
+const News = () => {
 	return (
-		<div className="dialogs">
-			Dialogss
+		<div className="news">
+			News
   		</div>
 	)
 }
 
-export default Dialogs
+export default News

@@ -1,15 +1,18 @@
-import s from './Posts.module.css'
-import Post from './Post/Post';
-const Posts = () => {
+import s from './ProfileContent.module.css'
+import ProfileData from "../ProfileData/ProfileData";
+import AddPost from "../AddPost/AddPost";
+import Posts from "../Posts/Posts";
+const ProfileContent = () => {
 	return (
-		<div className={s.post}>
-			<div className={s.post__title}>Posts</div>
-			<Post message="Lorem ipsum, dolor sit amet consectetur adipisicing." />
-			<Post message="Nisi amet error blanditiis similique, ex nulla." />
-			<Post message="Tenetur, ea perferendis dignissimos odio soluta error!" />
-			<Post message="Autem fuga iure harum molestias sapiente. Ullam!" />
+		<div className={s.profile__content}>
+			<div className={s.profile__left}>
+				<ProfileData />
+				<AddPost />
+			</div>
+
+			<Posts />
 		</div>
 	)
 }
 
-export default Posts
+export default ProfileContent

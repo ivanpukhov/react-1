@@ -1,10 +1,10 @@
-import s from './Dialogs.module.css'
-const Dialogs = () => {
+import s from './Music.module.css'
+const Music = () => {
 	return (
-		<div className="dialogs">
-			Dialogss
+		<div className="music">
+			Music
   		</div>
 	)
 }
 
-export default Dialogs
+export default Music

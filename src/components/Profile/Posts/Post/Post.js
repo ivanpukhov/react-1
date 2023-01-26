@@ -4,7 +4,7 @@ const Post = (props) => {
 	return (
 		<div className={s.post__item}>
 			{props.message}
-			<Likes count={Math.floor(Math.random() * 100)} />
+			<Likes  />
 
 		</div>
 	)
